@@ -1,0 +1,1079 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+  <head>
+    <title></title>
+    <style type="text/css">
+      body {
+        font-family: "Helvetica Neue", Helvetica, Arial, san-serif;
+      }
+
+      p {
+        margin: 0 0 9px;
+      }
+    </style>
+  </head>
+  <body>
+    <table cellpadding="0" cellspacing="0" class="container" width="100%">
+      <tbody>
+        <tr>
+          <td align="center">
+            <table
+              cellpadding="0"
+              cellspacing="0"
+              class="email-content"
+              style="
+                background-color: #fff;
+                padding-left: 10px;
+                padding-right: 10px;
+              "
+              width="600"
+            >
+              <tbody>
+                <!-- header -->
+                <tr>
+                  <td>
+                    <table width="100%" cellspacing="0" cellpadding="0">
+                      <tbody>
+                        <tr>
+                          <td style="width: 50%">
+                            <a
+                              href="https://satjapan.co/"
+                              style="text-decoration: none"
+                            >
+                              <img
+                                src="https://d3k81ch9hvuctc.cloudfront.net/company/SsFNJy/images/56387283-c426-49d8-a907-d447d673b83c.png"
+                                width="120"
+                                alt="Sat Japan"
+                              />
+                            </a>
+                          </td>
+                          <td
+                            align="right"
+                            style="font-family: sans-serif; width: 50%"
+                          >
+                            <div style="text-align: right; float: right">
+                              <a
+                                href="https://satjapan.com/"
+                                style="
+                                  color: #2384c1;
+                                  font-size: 16px;
+                                  text-decoration: none;
+                                  margin-right: 6px;
+                                "
+                                rel="noreferrer"
+                                target="_blank"
+                                >Used Cars
+                              </a>
+                              <a
+                                href="https://satjapan.com/new-cars-home"
+                                style="
+                                  color: #2384c1;
+                                  font-size: 16px;
+                                  text-decoration: none;
+                                "
+                                rel="noreferrer"
+                                target="_blank"
+                                >New Cars</a
+                              >
+                            </div>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </td>
+                </tr>
+                <!-- What is SAT Pro? -->
+                <tr>
+                  <td style="padding-top: 32px">
+                    <table cellpadding="0" cellspacing="0" width="100%">
+                      <tbody>
+                        <tr>
+                          <td
+                            style="
+                              font-family: sans-serif;
+                              font-size: 16px;
+                              font-weight: 700;
+                              line-height: 22px;
+                              letter-spacing: -0.02em;
+                              color: #0c1529;
+                            "
+                          >
+                            You've added {{ event.make|default:'' }} {{
+                            event.model|default:'' }} to your favorites great
+                            choice!
+                          </td>
+                        </tr>
+                        <tr>
+                          <td
+                            style="
+                              padding-top: 10px;
+                              font-family: sans-serif;
+                              font-size: 16px;
+                              font-weight: 500;
+                              line-height: 22px;
+                              letter-spacing: -0.02em;
+                              color: #0c1529;
+                            "
+                          >
+                            We wanted to remind you that we are giving you 100
+                            SAT Points, which translates to a $100 discount! You
+                            can apply these points directly towards purchasing
+                            {{ event.make|default:'' }} {{ event.model|default:'' }} .
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </td>
+                </tr>
+                <!-- Cars specs -->
+                <tr>
+                  <td style="padding-top: 32px">
+                    <table cellpadding="0" cellspacing="0" width="100%">
+                      <tbody>
+                        <tr>
+                          <td style="padding: 12px; background-color: #ffffff">
+                            <table cellpadding="0" cellspacing="0" width="100%">
+                              <tbody>
+                                <tr>
+                                  <td style="padding-bottom: 20px">
+                                    <table
+                                      cellpadding="0"
+                                      cellspacing="0"
+                                      width="100%"
+                                    >
+                                      <tbody>
+                                        <tr>
+                                          <td width="45%">
+                                            <img
+                                              src="{{ event.image|default:'' }}"
+                                              width="250"
+                                              height="145"
+                                              style="border-radius: 5px"
+                                              alt="sat car"
+                                            />
+                                          </td>
+                                          <td
+                                            width="55%"
+                                            valign="baseline"
+                                            style="padding-left: 30px"
+                                          >
+                                            <span
+                                              style="
+                                                padding-left: 10px;
+                                                padding-right: 10px;
+                                                padding-top: 2px;
+                                                padding-bottom: 2px;
+                                                border-radius: 31px;
+                                                background-color: #fb8a2e;
+                                                color: #fff;
+                                                font-family: sans-serif;
+                                                font-size: 12px;
+                                                font-weight: 700;
+                                                line-height: 16px;
+                                                letter-spacing: -0.01em;
+                                              "
+                                              >Earn 100 Points</span
+                                            >
+                                            <p
+                                              style="
+                                                margin-top: 12px;
+                                                font-family: sans-serif;
+                                                font-size: 16px;
+                                                font-weight: 700;
+                                                line-height: 18.3px;
+                                                letter-spacing: -0.016em;
+                                                color: #0c1529;
+                                              "
+                                            >
+                                            {{ event.make|default:'' }}  {{ event.model|default:'' }}
+                                            </p>
+                                            <!-- car specs -->
+                                            <div style="display: inline-flex">
+                                              <span
+                                                style="
+                                                  margin-right: 10px;
+                                                  font-family: sans-serif;
+                                                  font-size: 10.29px;
+                                                  font-weight: 400;
+                                                  line-height: 14.87px;
+                                                  letter-spacing: -0.012em;
+                                                  color: #0c1529;
+                                                "
+                                              >
+                                                <div>Year</div>
+                                                <div>2015/03</div>
+                                              </span>
+                                              <span
+                                                style="
+                                                  margin-right: 10px;
+                                                  font-family: sans-serif;
+                                                  font-size: 10.29px;
+                                                  font-weight: 400;
+                                                  line-height: 14.87px;
+                                                  letter-spacing: -0.012em;
+                                                  color: #0c1529;
+                                                "
+                                              >
+                                                <div>Engine</div>
+                                                <div>2000 cc</div>
+                                              </span>
+                                              <span
+                                                style="
+                                                  margin-right: 10px;
+                                                  font-family: sans-serif;
+                                                  font-size: 10.29px;
+                                                  font-weight: 400;
+                                                  line-height: 14.87px;
+                                                  letter-spacing: -0.012em;
+                                                  color: #0c1529;
+                                                "
+                                              >
+                                                <div>Mileage</div>
+                                                <div>61000 km</div>
+                                              </span>
+                                              <span
+                                                style="
+                                                  margin-right: 10px;
+                                                  font-family: sans-serif;
+                                                  font-size: 10.29px;
+                                                  font-weight: 400;
+                                                  line-height: 14.87px;
+                                                  letter-spacing: -0.012em;
+                                                  color: #0c1529;
+                                                "
+                                              >
+                                                <div>Transmission</div>
+                                                <div>AT</div>
+                                              </span>
+                                            </div>
+                                            <!-- car price -->
+                                            <div
+                                              style="
+                                                display: inline-flex;
+                                                margin-top: 12px;
+                                              "
+                                            >
+                                              <span
+                                                style="
+                                                  font-family: sans-serif;
+                                                  font-size: 16px;
+                                                  font-weight: 700;
+                                                  line-height: 13.73px;
+                                                  letter-spacing: -0.01em;
+                                                  color: #353c4d;
+                                                  margin-right: 30px;
+                                                "
+                                                >Car Price:</span
+                                              >
+                                              <span
+                                                style="
+                                                  font-family: sans-serif;
+                                                  font-size: 16px;
+                                                  font-weight: 900;
+                                                  line-height: 18.3px;
+                                                  letter-spacing: -0.016em;
+                                                  color: #079455;
+                                                "
+                                                > 
+                                                {{ event.total_price|default:'' }}
+                                                </span>
+                                            </div>
+                                            <!-- stock id -->
+                                            <div style="margin-top: 12px">
+                                              <span
+                                                style="
+                                                  font-family: sans-serif;
+                                                  font-size: 14px;
+                                                  font-weight: 400;
+                                                  line-height: 18.3px;
+                                                  letter-spacing: -0.016em;
+                                                  color: #0c1529;
+                                                "
+                                                >Stock ID: {{ event.stock_id|default:'' }}</span>
+                                            </div>
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td colspan="100%" align="center">
+                                    <a
+                                      href="/"
+                                      style="
+                                        text-decoration: none;
+                                        border-radius: 7px;
+                                        color: #fff;
+                                        background-color: #2a9fe8;
+                                        display: inline-block;
+                                        align-items: center;
+                                        margin-right: 18px;
+                                        font-family: sans-serif;
+                                        font-size: 15px;
+                                        padding: 10px;
+                                        width: 40%;
+                                        text-align: center;
+                                        font-weight: 700;
+                                      "
+                                      >Buy Now</a
+                                    >
+                                    <a
+                                      href="/"
+                                      style="
+                                        text-decoration: none;
+                                        border-radius: 7px;
+                                        color: #fff;
+                                        background-color: #1c6a9b;
+                                        display: inline-block;
+                                        align-items: center;
+                                        font-family: sans-serif;
+                                        font-size: 15px;
+                                        padding: 10px;
+                                        width: 40%;
+                                        text-align: center;
+                                        font-weight: 700;
+                                      "
+                                      >Reserve for $99</a
+                                    >
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </td>
+                </tr>
+                <!-- What is SAT Pro? -->
+                <tr>
+                  <td style="padding-top: 32px">
+                    <table cellpadding="0" cellspacing="0" width="100%">
+                      <tbody>
+                        <tr>
+                          <td
+                            style="
+                              font-family: sans-serif;
+                              font-size: 16px;
+                              font-weight: 700;
+                              line-height: 22px;
+                              letter-spacing: -0.02em;
+                              color: #0c1529;
+                            "
+                          >
+                            Act Now! This Offer Expires Soon
+                          </td>
+                        </tr>
+                        <tr>
+                          <td
+                            style="
+                              padding-top: 10px;
+                              font-family: sans-serif;
+                              font-size: 16px;
+                              font-weight: 500;
+                              line-height: 22px;
+                              letter-spacing: -0.02em;
+                              color: #0c1529;
+                            "
+                          >
+                            This is a limited-time offer, expiring in [Number]
+                            days/hours. Don’t miss out on this chance to get
+                            {{ event.make|default:'' }} {{ event.model|default:'' }}  for a significantly reduced price!
+                            <br />
+                            Please reach out to
+                            <a
+                              href="mailto:info@satjapan.com"
+                              style="color: #2a9fe8; margin-right: 4px"
+                            >
+                              info@satjapan.com</a
+                            >to get your unique discounted code
+                          </td>
+                        </tr>
+                        <tr>
+                          <td style="padding-top: 20px; padding-bottom: 20px">
+                            <div style="text-align: center">
+                              <span
+                                style="
+                                  display: inline-flex;
+                                  align-items: center;
+                                "
+                              >
+                                <span
+                                  style="
+                                    display: inline-flex;
+                                    align-items: center;
+                                    font-family: sans-serif;
+                                    font-size: 17.64px;
+                                    font-weight: 700;
+                                    line-height: 26.46px;
+                                    letter-spacing: -0.01em;
+                                    color: #2384c1;
+                                  "
+                                  ><img
+                                    src="https://d3k81ch9hvuctc.cloudfront.net/company/SsFNJy/images/376c11d8-1c8e-45f3-91ce-a92952914b45.png"
+                                    height="26"
+                                    width="26"
+                                    style="margin-right: 6px"
+                                    alt=""
+                                  />1 Point</span
+                                >
+                                <span
+                                  style="margin-left: 25px; margin-right: 25px"
+                                  >=</span
+                                >
+                                <span
+                                  style="
+                                    font-family: sans-serif;
+                                    font-size: 17.64px;
+                                    font-weight: 700;
+                                    line-height: 26.46px;
+                                    letter-spacing: -0.01em;
+                                    color: #2384c1;
+                                  "
+                                  >US$1</span
+                                >
+                              </span>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td colspan="100%">
+                            <div style="max-width: 350px; margin: 0 auto">
+                              <div
+                                style="
+                                  border-radius: 4.95px;
+                                  border: 1px solid #cbcbcb;
+                                  padding: 15px;
+                                  background-color: #fbfdff;
+                                "
+                              >
+                                <p
+                                  style="
+                                    font-family: sans-serif;
+                                    font-size: 16.51px;
+                                    font-weight: 700;
+                                    line-height: 23.11px;
+                                    letter-spacing: -0.014em;
+                                    color: #353c4d;
+                                    margin-bottom: 13px;
+                                  "
+                                >
+                                  Order Summary
+                                </p>
+                                <p
+                                  style="
+                                    display: inline-flex;
+                                    align-items: center;
+                                    margin-bottom: 0px;
+                                    background-color: #fcf6db;
+                                    font-family: sans-serif;
+                                    font-size: 12px;
+                                    font-weight: 500;
+                                    line-height: 14.67px;
+                                    letter-spacing: -0.01em;
+                                    color: #020408;
+                                    width: 100%;
+                                    padding: 5px;
+                                  "
+                                >
+                                  <img
+                                    src="https://d3k81ch9hvuctc.cloudfront.net/company/SsFNJy/images/376c11d8-1c8e-45f3-91ce-a92952914b45.png"
+                                    style="margin-right: 4px"
+                                    height="12"
+                                    width="12"
+                                    alt=""
+                                  />
+                                  Get 100$ off from your next order after buying
+                                  this car
+                                </p>
+                                <div style="margin-top: 13px">
+                                  <span
+                                    style="
+                                      padding-left: 10px;
+                                      padding-right: 10px;
+                                      padding-top: 2px;
+                                      padding-bottom: 2px;
+                                      border-radius: 31px;
+                                      background-color: #ff4b44;
+                                      color: #fff;
+                                      font-family: sans-serif;
+                                      font-size: 10px;
+                                      font-weight: 600;
+                                      line-height: 16px;
+                                      letter-spacing: -0.01em;
+                                      margin-right: 10px;
+                                    "
+                                    >New Year Sale</span
+                                  >
+                                  <span
+                                    style="
+                                      padding-left: 10px;
+                                      padding-right: 10px;
+                                      padding-top: 2px;
+                                      padding-bottom: 2px;
+                                      border-radius: 31px;
+                                      background-color: #a576f1;
+                                      color: #fff;
+                                      font-family: sans-serif;
+                                      font-size: 10px;
+                                      font-weight: 600;
+                                      line-height: 16px;
+                                      letter-spacing: -0.01em;
+                                      margin-right: 10px;
+                                    "
+                                    >Premium Cars</span
+                                  >
+                                </div>
+                                <div style="margin-top: 13px">
+                                  <p
+                                    style="
+                                      font-family: sans-serif;
+                                      font-size: 16px;
+                                      font-weight: 700;
+                                      line-height: 19.75px;
+                                      letter-spacing: -0.018em;
+                                      color: #1c6a9b;
+                                      margin-bottom: 8px;
+                                    "
+                                  >
+                                    2017 Toyota C-HR
+                                  </p>
+                                </div>
+                                <div style="display: inline-flex">
+                                  <span
+                                    style="
+                                      margin-right: 10px;
+                                      font-family: sans-serif;
+                                      font-size: 12px;
+                                      font-weight: 400;
+                                      line-height: 16px;
+                                      letter-spacing: -0.012em;
+                                      margin-right: 10px;
+                                    "
+                                  >
+                                    <div style="color: #858a94">Year</div>
+                                    <div style="color: #0c1529">2015/03</div>
+                                  </span>
+                                  <span
+                                    style="
+                                      margin-right: 10px;
+                                      font-family: sans-serif;
+                                      font-size: 12px;
+                                      font-weight: 400;
+                                      line-height: 16px;
+                                      letter-spacing: -0.012em;
+                                      margin-right: 10px;
+                                    "
+                                  >
+                                    <div style="color: #858a94">Engine</div>
+                                    <div style="color: #0c1529">2000 cc</div>
+                                  </span>
+                                  <span
+                                    style="
+                                      margin-right: 10px;
+                                      font-family: sans-serif;
+                                      font-size: 12px;
+                                      font-weight: 400;
+                                      line-height: 16px;
+                                      letter-spacing: -0.012em;
+                                      margin-right: 10px;
+                                    "
+                                  >
+                                    <div style="color: #858a94">Mileage</div>
+                                    <div style="color: #0c1529">61000 km</div>
+                                  </span>
+                                  <span
+                                    style="
+                                      margin-right: 10px;
+                                      font-family: sans-serif;
+                                      font-size: 12px;
+                                      font-weight: 400;
+                                      line-height: 16px;
+                                      letter-spacing: -0.012em;
+                                      margin-right: 10px;
+                                    "
+                                  >
+                                    <div style="color: #858a94">
+                                      Transmission
+                                    </div>
+                                    <div style="color: #0c1529">AT</div>
+                                  </span>
+                                </div>
+                                <div style="margin-top: 19px">
+                                  <span
+                                    style="
+                                      border: 1px solid #0000001a;
+                                      border-radius: 4.95px;
+                                      background-color: #ffffff;
+                                      padding: 11px;
+                                      display: inline-block;
+                                      width: 40%;
+                                      font-family: sans-serif;
+                                      font-size: 12px;
+                                      font-weight: 500;
+                                      line-height: 16px;
+                                      letter-spacing: -0.01em;
+                                    "
+                                    >Kenya
+                                  </span>
+                                  <span
+                                    style="
+                                      border: 1px solid #0000001a;
+                                      border-radius: 4.95px;
+                                      background-color: #ffffff;
+                                      padding: 11px;
+                                      display: inline-block;
+                                      width: 40%;
+                                      font-family: sans-serif;
+                                      font-size: 12px;
+                                      font-weight: 500;
+                                      line-height: 16px;
+                                      letter-spacing: -0.01em;
+                                    "
+                                    >Mombasa</span
+                                  >
+                                </div>
+                                <div style="margin-top: 19px">
+                                  <span
+                                    style="
+                                      border: 1px solid #2f9461;
+                                      border-radius: 4.95px;
+                                      background-color: #effdf6;
+                                      padding: 11px;
+                                      display: inline-block;
+                                      width: 60%;
+                                      font-family: sans-serif;
+                                      font-size: 12px;
+                                      font-weight: 500;
+                                      line-height: 16px;
+                                      letter-spacing: -0.01em;
+                                      margin-right: 10px;
+                                    "
+                                  >
+                                    <span style="color: #605f5f">Applied</span>
+                                    <span
+                                      style="color: #0c0c0c; font-weight: 600"
+                                      >SAT-121654</span
+                                    >
+                                  </span>
+                                  <span
+                                    style="
+                                      border: 1px solid #acacac;
+                                      border-radius: 6px;
+                                      background-color: #ffffff;
+                                      padding: 11px;
+                                      display: inline-block;
+                                      width: 20%;
+                                      font-family: sans-serif;
+                                      font-size: 12px;
+                                      font-weight: 500;
+                                      line-height: 16px;
+                                      letter-spacing: -0.01em;
+                                      text-align: center;
+                                      color: #acacac;
+                                    "
+                                    >Remove</span
+                                  >
+                                </div>
+                                <div
+                                  style="
+                                    margin-top: 19px;
+                                    padding-bottom: 10px;
+                                    border-bottom: 1px solid #eaeaea;
+                                  "
+                                >
+                                  <span
+                                    style="
+                                      font-family: sans-serif;
+                                      font-size: 14px;
+                                      font-weight: 700;
+                                      line-height: 20px;
+                                      letter-spacing: -0.01em;
+                                      color: #020408;
+                                    "
+                                    >Car Price</span
+                                  >
+                                  <span
+                                    style="
+                                      font-family: sans-serif;
+                                      font-size: 14.86px;
+                                      font-weight: 700;
+                                      line-height: 21.46px;
+                                      letter-spacing: -0.012em;
+                                      color: #121212;
+                                      float: right;
+                                    "
+                                    >$9,826</span
+                                  >
+                                </div>
+                                <div style="margin-top: 19px">
+                                  <span
+                                    style="
+                                      font-family: sans-serif;
+                                      font-size: 14px;
+                                      font-weight: 700;
+                                      line-height: 20px;
+                                      letter-spacing: -0.01em;
+                                      color: #020408;
+                                    "
+                                    >with Coupon Code
+                                  </span>
+                                  <span
+                                    style="
+                                      font-family: sans-serif;
+                                      font-size: 14.86px;
+                                      font-weight: 700;
+                                      line-height: 21.46px;
+                                      letter-spacing: -0.012em;
+                                      color: #1ba97f;
+                                      float: right;
+                                    "
+                                    >$9,826</span
+                                  >
+                                </div>
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td
+                            align="center"
+                            colspan="100%"
+                            style="padding-top: 24px"
+                          >
+                            <a
+                              href="https://satjapan.com/loyalty-program"
+                              style="
+                                text-decoration: none;
+                                font-family: sans-serif;
+                                font-size: 12px;
+                                font-weight: 600;
+                                line-height: 19px;
+                                letter-spacing: -0.02em;
+                                color: #014e78;
+                                border-bottom: 2px solid #014e78;
+                                display: inline-flex;
+                                align-items: center;
+                              "
+                              ><span style="display: inline-block"
+                                >Claim Your $100 Discount</span
+                              >
+                              <img
+                                alt="arrow"
+                                height="18"
+                                src="https://d3k81ch9hvuctc.cloudfront.net/company/SsFNJy/images/cae5507b-517a-49f3-92f3-f7b80d525e14.png"
+                                style="margin-left: 6px"
+                                width="18"
+                            /></a>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </td>
+                </tr>
+                <!-- how to buy / customer review -->
+                <tr>
+                  <td style="padding-top: 32px">
+                    <table width="100%" cellspacing="0" cellpadding="0">
+                      <tbody>
+                        <tr>
+                          <td width="50%" style="padding-right: 4px">
+                            <div
+                              style="
+                                padding: 17px;
+                                background-color: #f6f6f8;
+                                height: 207px;
+                              "
+                            >
+                              <p
+                                style="
+                                  font-family: sans-serif;
+                                  font-size: 16px;
+                                  font-weight: 700;
+                                  line-height: 18px;
+                                  letter-spacing: -0.02em;
+                                  color: #0c1529;
+                                "
+                              >
+                                How to Buy a Car with SAT
+                              </p>
+                              <p
+                                style="
+                                  font-family: sans-serif;
+                                  font-size: 12px;
+                                  font-weight: 400;
+                                  line-height: 14px;
+                                  letter-spacing: -0.016em;
+                                  margin-bottom: 12px;
+                                  color: #353c4d;
+                                "
+                              >
+                                Go through this step-by-step guide to purchase
+                                your dream car
+                              </p>
+                              <a
+                                href="https://www.youtube.com/watch?v=T_RWR68iLDg&amp;ab_channel=SATJapan"
+                                style="text-decoration: none"
+                              >
+                                <img
+                                  src="https://d3k81ch9hvuctc.cloudfront.net/company/SsFNJy/images/d9d665d3-04e6-4372-85f1-42dcb08637ba.png"
+                                  width="100%"
+                                  height="auto"
+                                  alt="sat howtobuy"
+                                />
+                              </a>
+                            </div>
+                          </td>
+                          <td width="50%" style="padding-left: 10px">
+                            <div
+                              style="
+                                padding: 17px;
+                                background-color: #f6f6f8;
+                                height: 207px;
+                              "
+                            >
+                              <p
+                                style="
+                                  font-family: sans-serif;
+                                  font-size: 16px;
+                                  font-weight: 700;
+                                  line-height: 18px;
+                                  letter-spacing: -0.02em;
+                                  color: #0c1529;
+                                "
+                              >
+                                Customer Reviews
+                              </p>
+                              <p
+                                style="
+                                  font-family: sans-serif;
+                                  font-size: 12px;
+                                  font-weight: 400;
+                                  line-height: 14px;
+                                  letter-spacing: -0.016em;
+                                  margin-bottom: 12px;
+                                  color: #353c4d;
+                                "
+                              >
+                                Hear what our customers are saying about us
+                              </p>
+                              <div style="text-align: center; margin-top: 11px">
+                                <a href="/" style="text-decoration: none">
+                                  <img
+                                    src="https://d3k81ch9hvuctc.cloudfront.net/company/SsFNJy/images/d3717553-e8f1-4228-8a3a-f29694ef85dd.png"
+                                    width="118"
+                                    height="52"
+                                    alt="sat satjapan"
+                                  />
+                                </a>
+                              </div>
+                              <div style="text-align: center; margin-top: 26px">
+                                <a
+                                  href="https://satjapan.com/testimonials?_kx=kLL19VMc7AhJbIyA8EVZ9w.SsFNJy"
+                                  style="
+                                    text-decoration: none;
+                                    border: 1px solid #0368a0;
+                                    padding-left: 10px;
+                                    padding-right: 10px;
+                                    padding-top: 8px;
+                                    padding-bottom: 8px;
+                                    font-family: sans-serif;
+                                    font-size: 12px;
+                                    font-weight: 500;
+                                    line-height: 16px;
+                                    letter-spacing: -0.01em;
+                                    color: #353c4d;
+                                    border-radius: 6px;
+                                  "
+                                >
+                                  See All Reviews
+                                </a>
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </td>
+                </tr>
+                <!-- image -->
+                <tr>
+                  <td style="padding-top: 32px">
+                    <table cellpadding="0" cellspacing="0" width="100%">
+                      <tbody>
+                        <tr>
+                          <td>
+                            <a href="https://satjapan.com/">
+                              <img
+                                alt="sat mobile"
+                                height="174"
+                                src="https://d3k81ch9hvuctc.cloudfront.net/company/SsFNJy/images/e75b7895-1055-4840-9341-6a330e1588d8.png"
+                                style="width: 100%; height: auto"
+                                width="493"
+                              />
+                            </a>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </td>
+                </tr>
+                <!-- footer -->
+                <tr>
+                  <td style="padding-top: 32px">
+                    <table cellpadding="0" cellspacing="0" width="100%">
+                      <tbody>
+                        <tr>
+                          <td
+                            style="
+                              background-color: #f6f6f6;
+                              padding-left: 14px;
+                              padding-right: 14px;
+                              padding-top: 10px;
+                              padding-bottom: 10px;
+                            "
+                          >
+                            <table
+                              border="0"
+                              cellpadding="0"
+                              cellspacing="0"
+                              width="100%"
+                            >
+                              <tbody>
+                                <tr>
+                                  <td>
+                                    <img
+                                      alt="sat logo"
+                                      src="https://d3k81ch9hvuctc.cloudfront.net/company/SsFNJy/images/56387283-c426-49d8-a907-d447d673b83c.png"
+                                      width="100"
+                                    />
+                                  </td>
+                                  <td align="end">
+                                    <a
+                                      href="https://www.facebook.com/satjapancars"
+                                      style="
+                                        margin-right: 13px;
+                                        text-decoration: none;
+                                      "
+                                    >
+                                      <img
+                                        alt="sat social"
+                                        height="24"
+                                        src="https://d3k81ch9hvuctc.cloudfront.net/assets/email/buttons/default/facebook_96.png"
+                                        style="border-radius: 50%"
+                                        width="24"
+                                      />
+                                    </a>
+                                    <a
+                                      href="https://www.instagram.com/satjapanofficial"
+                                      style="
+                                        margin-right: 13px;
+                                        text-decoration: none;
+                                      "
+                                    >
+                                      <img
+                                        alt="sat social"
+                                        height="24"
+                                        src="https://d3k81ch9hvuctc.cloudfront.net/assets/email/buttons/default/instagram_96.png"
+                                        style="border-radius: 50%"
+                                        width="24"
+                                      />
+                                    </a>
+                                    <a
+                                      href="https://twitter.com/SatJapanCar"
+                                      style="
+                                        margin-right: 13px;
+                                        text-decoration: none;
+                                      "
+                                    >
+                                      <img
+                                        alt="sat social"
+                                        height="24"
+                                        src="https://d3k81ch9hvuctc.cloudfront.net/assets/email/buttons/default/twitter_96.png"
+                                        style="border-radius: 50%"
+                                        width="24"
+                                      />
+                                    </a>
+                                    <a
+                                      href="https://www.youtube.com/@satjapan"
+                                      style="text-decoration: none"
+                                    >
+                                      <img
+                                        alt="sat social"
+                                        height="24"
+                                        src="https://d3k81ch9hvuctc.cloudfront.net/assets/email/buttons/default/youtube_96.png"
+                                        style="border-radius: 50%"
+                                        width="24"
+                                      />
+                                    </a>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td
+                                    align="start"
+                                    colspan="2"
+                                    style="padding-top: 12px"
+                                  >
+                                    <a
+                                      href="https://apps.apple.com/pk/app/sat-japan/id6670398121"
+                                      style="
+                                        text-decoration: none;
+                                        margin-right: 8px;
+                                      "
+                                    >
+                                      <img
+                                        alt="store"
+                                        height="30"
+                                        src="https://d3k81ch9hvuctc.cloudfront.net/company/SsFNJy/images/deacb21f-062e-4608-96bb-76125208bf32.png"
+                                        width="100"
+                                      />
+                                    </a>
+                                    <a
+                                      href="https://play.google.com/store/apps/details?id=com.satjapan.mobile"
+                                      style="text-decoration: none"
+                                    >
+                                      <img
+                                        alt="store"
+                                        height="30"
+                                        src="https://d3k81ch9hvuctc.cloudfront.net/company/SsFNJy/images/e2b9891a-164d-4a6a-8adf-d5acb2b877a8.png"
+                                        width="100"
+                                      />
+                                    </a>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td
+                                    align="start"
+                                    colspan="2"
+                                    style="
+                                      padding-top: 12px;
+                                      font-family: sans-serif;
+                                      font-size: 11.99px;
+                                      font-weight: 500;
+                                      line-height: 18.74px;
+                                      letter-spacing: -0.01em;
+                                      text-align: left;
+                                    "
+                                  >
+                                    SAT., LTD Hatakenaka Shimogawa Iwaki,
+                                    Fukushima, Japan &copy;2002-2025 SAT., LTD
+                                    or&nbsp;its&nbsp;affiliates
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
