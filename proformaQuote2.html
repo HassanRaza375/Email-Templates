@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex" />
+    <link
+      rel="stylesheet"
+      href="/assets/styles/bootstrap5vs/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="/assets/styles/fonts/fontawesome5v/css/all.min.css"
+    />
+    <link rel="stylesheet" href="/assets/styles/root.css" />
+    <title>Price Quote3</title>
+    <style>
+      .letter-head-bg {
+        background-color: #154f74;
+      }
+      .price-quote-footer p {
+        font-family: Lato;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 16px;
+        letter-spacing: -0.01em;
+      }
+      .signature {
+        width: 151px;
+        padding-left: 7px;
+        border-bottom: 1px solid #dcdae2;
+      }
+      .title-signature {
+        font-family: Lato;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 16px;
+        letter-spacing: 2px;
+        margin-bottom: 0px;
+        margin-top: 12px;
+      }
+      .cmn-padding {
+        padding-inline: 26px;
+        padding-top: 26px;
+      }
+      .signature-pricequote {
+        margin-top: 70px;
+        padding-inline: 26px;
+      }
+      .price-pricequote {
+        margin-top: 53px;
+        padding-inline: 26px;
+      }
+      .date {
+        list-style-type: none;
+        display: flex;
+        align-items: center;
+        padding-left: 0px;
+        margin-bottom: 8px;
+      }
+      .title {
+        font-family: Lato;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 16px;
+        color: #5d6370;
+        letter-spacing: -0.01em;
+      }
+      .val {
+        font-family: Lato;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 16px;
+        display: inline-block;
+        letter-spacing: -0.01em;
+        color: #000000;
+      }
+      .title2 {
+        font-family: Lato;
+        font-size: 12px;
+        font-weight: 600;
+        line-height: 16px;
+        display: inline-block;
+        color: #5d6370;
+        letter-spacing: -0.01em;
+      }
+      .val2 {
+        font-family: Lato;
+        font-size: 12px;
+        font-weight: 600;
+        display: inline-block;
+        line-height: 16px;
+        letter-spacing: -0.01em;
+        color: #000000;
+      }
+      .date-valid {
+        list-style-type: none;
+        display: flex;
+        align-items: center;
+        padding-left: 0px;
+        margin-bottom: 0px;
+      }
+      .personal-depart-dest {
+        margin-top: 24px;
+      }
+      .personal-depart-dest .head {
+        font-family: Lato;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 14px;
+        color: #000000;
+      }
+      .terms-condition {
+        margin-top: 16px;
+      }
+      .terms-condition p {
+        font-family: Lato;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 14px;
+        color: #000000;
+      }
+      .terms-condition p a {
+        text-decoration: none;
+        color: #2384c1;
+      }
+      .main-heading {
+        font-family: Lato;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 14px;
+        color: #0c1529;
+        margin-bottom: 8px;
+      }
+      .clr-grn {
+        color: #2f9461 !important;
+      }
+      .avail-offer {
+        display: flex;
+        align-items: center;
+        list-style-type: none;
+        margin-bottom: 0px;
+        padding-left: 0px;
+        gap: 32px;
+      }
+      .avail-offer li {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-family: Lato;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 20px;
+        letter-spacing: -0.01em;
+        color: #353c4d;
+      }
+      .vehicle-summary {
+        margin-block: 22px;
+      }
+      .vehicle-summary table thead th {
+        padding: 8px 13px;
+        font-family: Lato;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 14px;
+        color: #08202e;
+        background-color: #ecf5ff;
+      }
+      .vehicle-summary table tbody td {
+        padding: 8px 13px;
+      }
+      .max-103 {
+        max-width: 143px;
+      }
+      footer {
+        display: none;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+      }
+      .grn-br {
+        border-left: 5px solid #dcfae6;
+      }
+      .blue-br {
+        border-left: 5px solid #ecf5ff;
+      }
+      .clr-burn {
+        /* background-blend-mode: color-burn; */
+      }
+      @media print {
+        footer {
+          display: block;
+        }
+        @page {
+          margin: 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="container-fluid letter-head-bg py-2 px-4">
+      <div class="row">
+        <div class="col-12 d-flex align-items-center justify-content-between">
+          <h1 class="text-white fs-4 lh-base mb-0">Proforma Invoice</h1>
+          <img
+            src="/assets/images/new-icon/satlogo-priceQuote.png"
+            class="img-fluid"
+            width="98"
+            height="30"
+            loading="lazy"
+            alt="sat logo"
+          />
+        </div>
+      </div>
+    </header>
+    <section class="container-fluid cmn-padding">
+      <!-- dates -->
+      <div class="dates-validate">
+        <div class="row">
+          <div class="col-12">
+            <ul class="date">
+              <li class="title">Date:</li>
+              <li class="ms-2 val">25-Apr-2323</li>
+            </ul>
+            <ul class="date">
+              <li class="title">Due Date:</li>
+              <li class="ms-2 val">29-Apr-2024</li>
+            </ul>
+            <ul class="date-valid mt-2">
+              <li class="title">Order Number:</li>
+              <li class="ms-2 val">25422154</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- tables -->
+      <div class="personal-depart-dest">
+        <div class="row">
+          <div class="col-6">
+            <table>
+              <tbody>
+                <tr>
+                  <td class="pb-1 head" colspan="100%">Personal Information</td>
+                </tr>
+                <tr>
+                  <td class="pb-1">
+                    <span class="title"> Name: </span>
+                  </td>
+                  <td class="pb-1">
+                    <span class="ps-2 val"> Johanson </span>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="pb-1">
+                    <span class="title">Address:</span>
+                  </td>
+                  <td class="pb-1">
+                    <span class="ps-2 val">
+                      near mian tent service, Ichhra Shah Jamal Fazlia
+                      Colony</span
+                    >
+                  </td>
+                </tr>
+                <tr>
+                  <td class="pb-1">
+                    <span class="title">E-mail:</span>
+                  </td>
+                  <td>
+                    <span class="ps-2 val"> example@gmail.com</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="pb-1">
+                    <span class="title">Phone: </span>
+                  </td>
+                  <td>
+                    <span class="ps-2 val">+923235147250</span>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="col-6">
+            <table>
+              <tbody>
+                <tr>
+                  <td class="pb-1 head">Departure</td>
+                </tr>
+                <tr>
+                  <td class="pb-1">
+                    <span class="title"
+                      >156-1 Hatakenaka Aza Izumimachi, Iwaki, Fukushima
+                      971-8183, Japan
+                    </span>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <table class="mt-3">
+              <tbody>
+                <tr>
+                  <td class="pb-1 head">Destination</td>
+                </tr>
+                <tr>
+                  <td class="pb-1">
+                    <span class="title"
+                      >156-1 Hatakenaka Aza Izumimachi, Iwaki, Fukushima
+                      971-8183, Japan</span
+                    >
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      <!-- Vehicle Summary -->
+      <div class="vehicle-summary">
+        <div class="row">
+          <div class="col-12">
+            <h2 class="main-heading mb-3">Vehicle Summary</h2>
+          </div>
+          <div class="col-12">
+            <table class="w-100">
+              <thead>
+                <tr>
+                  <th>Image</th>
+                  <th>Car Detail</th>
+                  <th>Price</th>
+                  <th>Total Price</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td width="25%">
+                    <img
+                      src="/assets/images/car-images/carsample.jpg"
+                      class="rounded"
+                      loading="lazy"
+                      height="91"
+                      width="153"
+                      alt="sat car"
+                    />
+                    <div class="d-flex align-items gap-2 mt-2">
+                      <span class="title2">Stock ID:</span>
+                      <span class="val2 flex-grow-1">sat-5515412</span>
+                    </div>
+                  </td>
+                  <td width="25%" valign="top">
+                    <div class="mb-2">
+                      <div
+                        class="d-flex align-items-center justify-content-between max-103"
+                      >
+                        <span class="title2">Shipping:</span>
+                        <span class="val2 flex-grow-1 ms-2">$2545</span>
+                      </div>
+                    </div>
+                    <div class="mb-2">
+                      <div
+                        class="d-flex align-items-center justify-content-between max-103"
+                      >
+                        <span class="title2">Year:</span>
+                        <span class="val2 flex-grow-1 ms-2">2022/9</span>
+                      </div>
+                    </div>
+                    <div class="mb-2">
+                      <div
+                        class="d-flex align-items-center justify-content-between max-103"
+                      >
+                        <span class="title2">Make:</span>
+                        <span class="val2 flex-grow-1 ms-2">HONDA</span>
+                      </div>
+                    </div>
+                    <div class="mb-2">
+                      <div
+                        class="d-flex align-items-center justify-content-between max-103"
+                      >
+                        <span class="title2">Model:</span>
+                        <span class="val2 flex-grow-1 ms-2">Vezel</span>
+                      </div>
+                    </div>
+                    <div class="">
+                      <div
+                        class="d-flex align-items-center justify-content-between max-103"
+                      >
+                        <span class="title2">Model Code:</span>
+                        <span class="val2 flex-grow-1 ms-2">6BA-RV3</span>
+                      </div>
+                    </div>
+                  </td>
+                  <td width="25%" valign="top">
+                    <span class="val2 flex-grow-1 ms-2">$2545</span>
+                  </td>
+                  <td valign="top" width="25%">
+                    <span class="val2 flex-grow-1">$62542</span>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      <!-- terms and conditions -->
+      <div class="terms-condition">
+        <div class="row grn-br">
+          <div class="col-12">
+            <p>Bank Information:</p>
+          </div>
+          <div class="col-12 d-flex gap-5">
+            <table>
+              <tbody>
+                <tr>
+                  <td class="pb-1 title">Bank Name:</td>
+                  <td class="pb-1">
+                    <span class="val ps-2">MUFG Bank </span>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="pb-1 title">Branch Name:</td>
+                  <td class="pb-1">
+                    <span class="val ps-2">Mito Branch</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="pb-1 title">Account Number:</td>
+                  <td class="pb-1">
+                    <span class="val ps-2">0052549</span>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+
+            <table>
+              <tbody>
+                <tr>
+                  <td class="pb-1 title">Swift Code:</td>
+                  <td class="pb-1">
+                    <span class="val ps-2">BOTK JPJT</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="pb-1 title">Name:</td>
+                  <td class="pb-1">
+                    <span class="val ps-2">Shine Auto Trading co.,LTD</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="pb-1 title">Bank address:</td>
+                  <td class="pb-1">
+                    <span class="val ps-2"
+                      >〒310-0026 , 3-1-28, Izumicho, Mito-shi, Ibaraki,
+                      Japan</span
+                    >
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <p class="mt-3">
+              Ready to buy this car? <a href="">Reserve it now for just $99</a>
+            </p>
+          </div>
+        </div>
+        <div class="row blue-br">
+          <div class="col-12">
+            <h2 class="main-heading">Terms:</h2>
+            <ul class="mb-0 ps-3">
+              <li class="title mb-2">
+                Please make sure to transfer 100% of the payment before the
+                shipment.
+              </li>
+              <li class="title mb-2">
+                If you need the invoice in JPY, please contact our sales team at
+                <a
+                  href="mailto:info@satjapan.com"
+                  class="title text-decoration-underline"
+                  >info@satjapan.com.</a
+                >
+              </li>
+              <li class="title mb-2">
+                All bank charges and handling fees shall be borne and paid by
+                the purchasing party.
+              </li>
+              <li class="title">
+                The payment should come in the exact currency in which the
+                invoice has been sent.
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="row mt-4">
+          <div class="col-12">
+            <p>
+              Please agree to our <a href="">terms and conditions</a> before
+              placing an order for a smooth buying experience.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- bottom sections -->
+    <div class="signature-pricequote">
+      <div class="row">
+        <div class="col-6 d-flex justify-content-start align-items-center">
+          <div class="signature">Total Price:<b class="ps-1">$5451</b></div>
+        </div>
+        <div class="col-6 d-flex justify-content-end align-items-center">
+          <div class="signature">
+            <img
+              src="/assets/images/new-icon/signatureprice-quote.png"
+              height="34"
+              width="103"
+              class="clr-burn"
+              alt="sat signature"
+            />
+          </div>
+        </div>
+        <div class="col-12 d-flex align-items-center justify-content-end">
+          <h2 class="title-signature">Shine Auto Trading</h2>
+        </div>
+      </div>
+    </div>
+    <!-- footer -->
+    <footer
+      class="container-fluid price-quote-footer letter-head-bg text-white py-2 px-4 mt-2"
+    >
+      <div class="row">
+        <div class="col-12 d-flex align-items-center justify-content-between">
+          <p class="mb-0">
+            156-1 Hatakenaka Aza Izumimachi, Iwaki, Fukushima 971-8183, Japan
+          </p>
+          <p class="mb-0">+81 709-008-7605</p>
+        </div>
+      </div>
+    </footer>
+    <script src="/assets/js/bootstrap5vs/js/bootstrap.min.js"></script>
+    <script>
+      //   window.print();
+    </script>
+  </body>
+</html>
